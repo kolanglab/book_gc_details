@@ -13,7 +13,7 @@ body:
     attributes:
       label: 対象箇所
       description: 章・節、ソースの Markdown ファイル名、公開サイトの該当 URL など
-      placeholder: "例: 第3章 2節 / 03-advanced.md / https://ko1.github.io/book_gc_details/#ch3-2"
+      placeholder: "例: 第3章 2節 / 03-advanced.md / https://kolanglab.github.io/book_gc_details/#ch3-2"
     validations:
       required: true
   - type: textarea

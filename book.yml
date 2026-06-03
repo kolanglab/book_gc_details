@@ -25,7 +25,7 @@ chapters:
   - appendix:
     - a1-glossary.md
 
-repository: "https://github.com/kolanglab/book_gc_details"
-
 github_review:
   enabled: true
+
+repository: "https://github.com/kolanglab/book_gc_details"
