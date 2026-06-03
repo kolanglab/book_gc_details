@@ -1,0 +1,31 @@
+title: "GC最前線"
+author: "AI Generated"
+language: "ja"
+ai_generated: true
+chapter_numbers: true
+bibliography: references.bib
+chapters:
+  - cover: cover.md
+  - part: part1.md
+    chapters:
+      - 01-fundamentals.md
+      - 02-tracing.md
+      - 03-reference-counting.md
+      - 04-generational.md
+  - part: part2.md
+    chapters:
+      - 05-concurrent-parallel.md
+      - 06-region-based.md
+      - 07-unified-theory.md
+  - part: part3.md
+    chapters:
+      - 08-modern-implementations.md
+      - 09-latest-research.md
+      - 10-future.md
+  - appendix:
+    - a1-glossary.md
+
+repository: "https://github.com/kolanglab/book_gc_details"
+
+github_review:
+  enabled: true
