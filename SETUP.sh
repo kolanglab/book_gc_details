@@ -13,7 +13,7 @@
 
 set -euo pipefail
 
-OWNER="ko1"
+OWNER="kolanglab"
 REPO="book_gc_details"
 
 echo "==> リポジトリ作成 + push（ブランチは master 想定）"
