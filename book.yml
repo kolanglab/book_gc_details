@@ -1,4 +1,5 @@
 title: "GC最前線"
+description: "GC 実装方式の研究と実装、2026年時点の最前線を詳説"
 author: "AI Generated"
 language: "ja"
 ai_generated: true
