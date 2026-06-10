@@ -15,7 +15,7 @@
 
 ### 設計思想
 
-[Immix](#index:Immix)は[Blackburn and McKinley](#cite:blackburn2008)が2008年に提案したMark-Region方式のGCである。Mark-SweepとコピーGCの長所を組み合わせた画期的な設計であり、その後のGC研究に大きな影響を与えた。
+[Immix](#index:Immix)は[](#cite:blackburn2008)が2008年に提案したMark-Region方式のGCである。Mark-SweepとコピーGCの長所を組み合わせた画期的な設計であり、その後のGC研究に大きな影響を与えた。
 
 Immixの核心的なアイデアは、ヒープを**ブロック**（通常32KB）と**ライン**（通常256バイト）の二階層に分割することである。
 
@@ -142,13 +142,13 @@ end
 ```
 
 > [!NOTE]
-> Immixの日和見的退避は、Mark-SweepとコピーGCの「いいとこ取り」を実現する。通常はMark-Sweepの低コストで動作し、フラグメンテーションが問題になった場合のみコピーを行う。[Blackburn and McKinley](#cite:blackburn2008)の評価では、20のベンチマークで既存のアルゴリズムに対して平均7〜25%の性能向上を示した。ImmixはMMTkフレームワーク上で実装されており、MMTk経由でCRuby（実験的）やJulia（開発中）でも利用可能になりつつある。また、Rustコンパイラ自身もGCを使わないが、Immixの設計思想はRust向けGCライブラリの研究にも影響を与えている。
+> Immixの日和見的退避は、Mark-SweepとコピーGCの「いいとこ取り」を実現する。通常はMark-Sweepの低コストで動作し、フラグメンテーションが問題になった場合のみコピーを行う。[](#cite:blackburn2008)の評価では、20のベンチマークで既存のアルゴリズムに対して平均7〜25%の性能向上を示した。ImmixはMMTkフレームワーク上で実装されており、MMTk経由でCRuby（実験的）やJulia（開発中）でも利用可能になりつつある。また、Rustコンパイラ自身もGCを使わないが、Immixの設計思想はRust向けGCライブラリの研究にも影響を与えている。
 
 ## LXR: 次世代のリージョンベースGC
 
 ### 設計
 
-[LXR（Latency-critical Immix with Reference counting）](#index:LXR)は[Zhao, Blackburn, McKinley](#cite:zhao2022)が2022年のPLDIで発表した、Immixの設計を基盤とする次世代GCである。低レイテンシと高スループットの両立を目指す。
+[LXR（Latency-critical Immix with Reference counting）](#index:LXR)は[](#cite:zhao2022)が2022年のPLDIで発表した、Immixの設計を基盤とする次世代GCである。低レイテンシと高スループットの両立を目指す。
 
 LXRの核心的な設計判断:
 1. **参照カウント + Immixヒープ**: ライン単位の参照カウントにより、多くのメモリをコピーなしで回収

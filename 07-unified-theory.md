@@ -2,7 +2,7 @@
 
 ## 双対性
 
-[Bacon, Cheng, Rajan](#cite:bacon2004)の2004年のOOPSLA論文 "A Unified Theory of Garbage Collection" は、GC研究における最も影響力のある理論的成果の一つである。彼らは、トレーシングGCと参照カウントが同一の問題の双対（dual）であることを形式的に示した。
+[](#cite:bacon2004)の2004年のOOPSLA論文 "A Unified Theory of Garbage Collection" は、GC研究における最も影響力のある理論的成果の一つである。彼らは、トレーシングGCと参照カウントが同一の問題の双対（dual）であることを形式的に示した。
 
 基本的な洞察は以下の通りである。
 
@@ -197,7 +197,7 @@ C_{\text{RC}} \propto |\text{Mutations}|
 
 ### 最適な選択
 
-[Blackburn et al.](#cite:blackburn2004)は、GC方式の選択がアプリケーションの特性に大きく依存することを実証的に示した。
+[](#cite:blackburn2004)は、GC方式の選択がアプリケーションの特性に大きく依存することを実証的に示した。
 
 ```ruby
 # GC方式選択の概念的なガイドライン
