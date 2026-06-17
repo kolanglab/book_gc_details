@@ -1,4 +1,6 @@
 title: "GC最前線"
+head: |
+  <script data-goatcounter="https://ko1.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 description: "GC 実装方式の研究と実装、2026年時点の最前線を詳説"
 author: "AI Generated"
 language: "ja"
